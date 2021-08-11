@@ -4,7 +4,7 @@ const StarRating = () => {
   
   return (
     <>
-    <div class="rw-ui-container"></div>
+    <div className="rw-ui-container"></div>
     </>
   );
 };

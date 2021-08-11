@@ -5,7 +5,6 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
-    console.log("hola");
     if (toggle === false) {
       setToggle(true);
     } else {
@@ -27,7 +26,7 @@ const Header = () => {
                 className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
                 id="navbar-toggle"
               >
-                <i class="fas fa-bars"></i>
+                <i className="fas fa-bars"></i>
               </button>
             </div>
 
@@ -35,7 +34,7 @@ const Header = () => {
               className={`${
                 toggle === false
                   ? "hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0"
-                  : "flex md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0"
+                  : "flex md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 animate__animated animate__fadeIn"
               }`}
               id="navbar-collapse"
             >
